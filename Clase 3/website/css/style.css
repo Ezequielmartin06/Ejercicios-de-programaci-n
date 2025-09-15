@@ -1,0 +1,166 @@
+/* tipos selectores 
+-etiqueta
+-clase
+-id
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+/* selectores de etiqueta */
+
+/* selector universal */
+*{
+    /* reset */
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "DM Serif Text", serif;
+}
+p,a,figcaption{
+    font-family: "Montserrat", sans-serif;
+}h1{
+    color: rgb(138, 44, 12);
+
+}
+h2{
+    color: rgb(189, 55, 5);
+    
+}
+
+p{
+    color: rgb(73, 73, 73);
+    /*Color del texto  */
+    font-weight: 400; 
+    /* Peso tipografico, va del 100 al 900 */
+    font-size: 20px;
+    /* tama;o del texto */
+    line-height: 24px;
+    /* Interlineado */
+    text-decoration:none ;
+    /* Decorado del texto (Subrayado, tachado, overline */
+}
+a{
+    color: black;
+    text-decoration: none;
+
+    
+}
+
+/* selectores de clased*/
+.text-ligth{
+    color: rgb(192, 192, 192);
+}
+.text-dark{
+    color: rgb(26, 26, 26);
+}
+.text-green{
+    color: rgb(5, 75, 14);
+}
+.text-skyblue{
+    color: rgb(7, 150, 160);
+}
+.text-sm{
+    font-size: 14px;
+}
+.text-md{
+    font-size: 28px;
+}
+.text-lg{
+    font-size: 34px;
+}
+.text-center{
+    text-align: center;
+}
+.text-rigth{
+    text-align: right;
+}
+/* selector de ID - (identificador unico) */
+
+/* 3 formas de vincular css
+1-  Linkear el html al css /recomendado
+2-Incrustrar el css al html de forma local /no recomendado
+3- Incrustrar el css a la etiqueta / prhibido
+*/
+
+/* box model / modelo de caja 
+-Ancho / width
+-Alto / heigth
+-Margen / margin
+-Relleno / padding
+-Borde / border
+*/
+
+p{
+    /* margin: 80px los 4 lados ; */
+    
+    /*margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 80px; */
+
+    /* los 4 lados en una sola linea de texto */
+    
+    /*margin: 20px 30px 20px 30px;*/
+
+    /* primer valor arriba y abajo, segundo valor los lados */
+    margin: 30px auto;
+
+    /* misma logica que margin */
+    padding: 15px;
+
+    /*border-color:red ;
+    border-width: 5px;
+    border-style: solid;*/
+    /* border-style: dotted */
+    /* border-style: dashed */
+    /*border-style: double  */
+
+    /* border-top
+    border-rigth 
+    border- rigth
+    border-bottom*/
+    border-top:red 2px solid;
+    background-color: green;
+    
+    /* width */
+    width: 90%;
+    height: 300px;
+
+    /* desbordamiento */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* selector descendente */
+header img{
+    /*width: 1000px; Medida absoluta (no es recomendable usar)*/
+    /* Medidas relativas se adaptan % */
+    width: 100%; /*recomendado para los contenedores*/
+
+
+}
+
+nav{
+    background-color: aliceblue;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    nav ul{
+        display: flex;
+        list-style: none;
+    }
+        nav ul li{
+            margin-right: 20px;
+    }
+            na ul li a{
+                text-transform: uppercase;
+            }
+            /* pseudo clase :hover */
+            nav ul li a:hover{
+                color: blue;
+            }
+    nav img{
+    width: 150px;
+}
